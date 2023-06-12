@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array Methods</title>
+
+</head>
+<body>
+    <h4> Task on Array Methods</h4>
+    <p id="task"></p>
+
+    <script>
+    let numbers = [8,4,9,2,6,1,7,5];
+
+numbers.sort();
+// document.write(numbers);
+console.log("the numbers comes in order:" + numbers);
+document.write("<br>")
+
+numbers.shift(numbers);
+// document.write(numbers);
+console.log("remove first element:" + numbers);
+// document.write("<br>")
+
+numbers.push(10);
+// document.write(numbers);
+console.log("Adding 10number at end:" + numbers);
+document.write("<br>")
+
+ indexposition = numbers.indexOf(6);
+// document.write(numbers);
+console.log( "Find the index of six:" + indexposition);
+document.write("<br>")
+
+includes7 = numbers.includes(7);
+        console.log("Number fetching: " + includes7);
+        document.write("<br>")
+
+    //  function EvenNumbers(arr) {
+            // for (let i = 0; i < 10; i++) {
+                // if (arr[i] % 2 === 0) {
+                // console.log("Even numbers in Array: " + arr[i]);
+                
+            
+            
+            // EvenNumbers(numbers);
+            // document.write("<br>")
+
+function evenNumber() {
+    // let number1 = [8,4,9,2,6,1,7,5]
+    for (let i of numbers) {
+        if (i%2===0){
+    
+            console.log(i);
+            }      
+    }
+}
+evenNumber();
+
+<p>Phaneendra</p>
+
+
+</script>
+
+</body>
+</html>
